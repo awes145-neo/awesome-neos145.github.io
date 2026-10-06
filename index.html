@@ -1,88 +1,18 @@
-<!DOCTYPE html>
-<!-- note from awes145: Kris Perry made this code
-comments are from him, not me 
-
-Note from KP: if you want a link on the navbar to open in the content iframe, simply find the '<a href' and add a ' target="mainframe" '
-on the otherhand, links clicked inside the iframe will auto open IN the iframe.
-if you want a link on a LOADED page to open without the iframe (E.G sending offboard to discord, etc..)
-You will need to add ' target="_parent" ' to those <a> tags in their respective HTML --> 
- 
-<head><title>Awesome_neos145</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/x-icon" href="https://awes145.com/favicon.ico">
-<meta content="Hey!" property="og:title">
-<meta content="Hello! This is Awesome_neos145's website. Click here to take a look around, you'll probably find something interesting around here..." property="og:description">
-<meta content="https://awes145.com/index.html" property="og:url">
-<meta content="#FF0000" data-react-helmet="true" name="theme-color">
-</head>
-
-<body>
-<!-- KP note: Stupid ass navbar, just an unordered list with some CSS tomfoolery -->
-<!-- sorry man, i didn't feel like going through the trouble to use PHP-->
-<script src="/mobiledetect.js"></script>
-<ul>
-
-<li>
-<a target="mainframe" href="https://awes145.com/welcome.html">Home</a>
-</li>
-
-<!-- note from KP: This is a dropdown -->  
-<!-- cool -->
-<li class="dropdown">
-<a target="mainframe" href="javascript:void(0)" class="dropbtn">Stuff</a>
-<!-- KP note 2 - Electric Boogaloo: Heres the menu options -->
-<div class="dropdown-content">
-<a target="mainframe" href="https://awes145.com/stuff">Stuff</a>
-<a target="mainframe" href="https://awes145.com/fcs">Friend Codes</a>
-<a target="mainframe" href="https://awes145.com/stuff/choices.html">Choices</a>
-<a target="mainframe" href="https://awes145.com/guides">Guides</a>
-<a target="mainframe" href="https://awes145.com/amp">awes145's WOLF3D Mission Pack</a>
-<a target="mainframe" href="https://awes145.com/msXBOXstuff">Microsoft XBOX Tools</a>
-<a target="mainframe" href="https://awes145.com/updates.html">Website Updates</a>
-</div>
-</li>
-<!-- KP note: Wait here, you can put more
-
-<li class="dropdown">
-<a target="mainframe" href="javascript:void(0)" class="dropbtn">Stuff</a>
-<div class="dropdown-content">
-<a target="mainframe" href="#">??????</a>
-<a target="mainframe" href="#">??????</a>
-</div>
-</li>
-
--->
-<!-- leaving it be because idk if i'll add more -->
-<li>
-<a target="mainframe" href="https://awes145.com/links">Links</a>
-</li>
-<li><a target="mainframe" href="https://awes145.com/contact">Contact</a>
-</li>
-<!-- another dropdown menu -->
-<li class="dropdown" style="float:right;">
-<a class="dropbtn" href="javascript:void(0)" style="text-align:right;">More+</a>
-<div class="dropdown-content" style="right:0;">
-
-<a href="http://youmake.myftp.org/asm/awes.php" target="headeriframe" onclick="document.getElementById('iframeURL').href='/chat.php';document.getElementById('iframeURL').target='_parent';">Live Chat</a>
-<!-- KP note: put your spotify playlist below -->
-<!-- he-hey, don't mind if i do... -->
-<a href="https://open.spotify.com/embed/playlist/1ExR8gHgNQJGD2Qly457Aa?utm_source=generator&theme=0" target="headeriframe">Spotify</a>
-
-<div style="max-height: 153px;background-color: black;background-clip: padding-box; box-shadow: 0 0 10px #000000;">
-<iframe name ="headeriframe"></iframe></div>
-</div>
-</li>
-</ul>
-
-<!--Start Content Loader Iframe here -->
-<!--wrap the iframe in a div so we can STREEEETCH it even if the loaded page has no content, this somewhat prevents the iframe scrollbars and borderbox showing up halfway down the page-->
-<div style="position:fixed;width:100%;height:100%;">
-<iframe allowfullscreen="true" style="width:100%; border-width:0px; min-height:100%;" id="mainframe" name="mainframe" class="mainframe" src="https://awes145.com/welcome.html"><!--Default loaded URL jut there--></iframe></div>
-
-<!-- end main document Iframe/start footer maybe?, hintedy hint-hint-->
-
-</body>
+<html>
+    <link rel="stylesheet" href="styles.css">
+    <title>awes145</title>
+    <h1>awes145</h1>
+    <p>Welcome to my website!</p>
+    <p>You can navigate to different sections of the website using the buttons below.</p>
+    <div class="button-row">
+        <a href="/projects">
+            <button class="primary"><span>Projects</span></button>
+        </a>
+        <a href="/stuff">
+            <button class="primary"><span>Misc.</span></button>
+        </a>
+    </div>
+    <a href="/contact">
+        <button class="secondary"><span>Contact</span></button>
+    </a>
 </html>
-<!-- i'm a dumbass lmao -->
-<!-- this website was made possible by me, SKCro, and Kris Perry -->
-<!-- thanks to these people who made all these tiny bits and pieces fly -->
